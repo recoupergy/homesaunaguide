@@ -23,16 +23,16 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: SITE.name,
-    title: "Home Sauna Guide | Better heat starts with a better plan",
+    title: "Home Sauna Guide | Build the sauna you will actually use",
     description: SITE.description,
     url: SITE.url,
-    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Home Sauna Guide — plan, build, and enjoy better heat" }],
+    images: [{ url: "/og-v2.png", width: 1200, height: 630, alt: "Home Sauna Guide: build the sauna you will actually use" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Home Sauna Guide",
-    description: "Plan, build, and enjoy better heat.",
-    images: ["/og.png"],
+    description: "Real löyly, useful geometry, durable materials, proven heaters, and honest tradeoffs.",
+    images: ["/og-v2.png"],
   },
   robots: {
     index: true,

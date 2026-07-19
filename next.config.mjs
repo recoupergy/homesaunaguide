@@ -3,7 +3,7 @@ import { readFileSync } from "node:fs";
 const legacy = JSON.parse(readFileSync(new URL("./src/data/legacy-content.json", import.meta.url), "utf8"));
 const currentRoutes = new Set([
   "about", "affiliate-disclosure", "blog", "contact", "editorial-policy", "faq",
-  "guides", "sources", "tools/sauna-room-calculator",
+  "guides", "point-of-view", "sources", "tools/sauna-room-calculator",
 ]);
 
 const sameSiteDestination = (destination) => {
@@ -74,6 +74,8 @@ const nextConfig = {
       },
       { source: "/2019/05", destination: "/blog", permanent: true },
       { source: "/2019/05/", destination: "/blog", permanent: true },
+      { source: "/sauna-marketplace-homepage", destination: "/", permanent: true },
+      { source: "/sauna-marketplace-homepage/", destination: "/", permanent: true },
       { source: "/author/bennyburger", destination: "/about", permanent: true },
       { source: "/author/bennyburger/", destination: "/about", permanent: true },
       { source: "/category/home-sauna-tips", destination: "/guides", permanent: true },

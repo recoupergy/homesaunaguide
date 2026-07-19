@@ -7,6 +7,7 @@ import { ArticleCard } from "@/components/article-card";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { JsonLd } from "@/components/json-ld";
 import { getEditorialPosts } from "@/lib/content";
+import { HEATER_SHORTLIST, MATERIAL_SHORTLIST } from "@/lib/editorial";
 import { SITE } from "@/lib/site";
 import { TOPICS, topicSources, type TopicKey } from "@/lib/topics";
 
@@ -68,6 +69,11 @@ export default async function TopicPage({ params }: Props) {
         <div className="shell topic-layout">
           <div className="topic-main">
             <AnswerBox>{item.answer}</AnswerBox>
+            <aside className="guide-position" role="note">
+              <span>Our take</span>
+              <p>{item.position}</p>
+              <Link href="/point-of-view">See every position behind our recommendations →</Link>
+            </aside>
             <section className="topic-steps">
               <span className="kicker">The decision path</span>
               <h2>What matters, in order.</h2>
@@ -77,6 +83,32 @@ export default async function TopicPage({ params }: Props) {
                 ))}
               </ol>
             </section>
+            {key === "building" && (
+              <section className="topic-shortlist">
+                <span className="kicker">Our wood bias</span>
+                <h2>Three materials we keep coming back to.</h2>
+                <div className="material-mini-grid">
+                  {MATERIAL_SHORTLIST.map((material) => <article key={material.name}><h3>{material.name}</h3><p>{material.take}</p></article>)}
+                </div>
+                <p className="shortlist-caveat">Use the grade and profile intended for its job. Bench stock, wall cladding, and exterior boards are not interchangeable just because the species name matches.</p>
+              </section>
+            )}
+            {key === "heaters" && (
+              <section className="topic-shortlist">
+                <span className="kicker">Shortlist by job</span>
+                <h2>Good heaters solve different problems.</h2>
+                <div className="heater-mini-list">
+                  {HEATER_SHORTLIST.map((heater, index) => (
+                    <article key={heater.name}>
+                      <span>{String(index + 1).padStart(2, "0")}</span>
+                      <div><h3>{heater.name}</h3><strong>{heater.fit}</strong><p>{heater.take}</p></div>
+                      <a href={heater.url} rel="noopener">Official details ↗</a>
+                    </article>
+                  ))}
+                </div>
+                <Link className="text-link" href="/point-of-view">Read the tradeoffs behind the shortlist →</Link>
+              </section>
+            )}
             <section className="topic-faq">
               <span className="kicker">Direct answers</span>
               <h2>Common questions.</h2>
@@ -92,9 +124,9 @@ export default async function TopicPage({ params }: Props) {
             </section>
           </div>
           <aside className="topic-rail">
-            <span>Field note</span>
+            <span>Our non-negotiable</span>
             <strong>Do not design from a generic diagram.</strong>
-            <p>Use the current manual for the exact heater and control you buy. Clearances, sensor position, ventilation, and electrical requirements vary.</p>
+            <p>Use the current manual for the exact heater and control you buy. Clearances, sensor position, ventilation, electrical requirements, and allowed room volume vary.</p>
             <Link href="/tools/sauna-room-calculator">Calculate room volume →</Link>
           </aside>
         </div>

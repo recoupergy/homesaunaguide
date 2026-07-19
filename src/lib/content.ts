@@ -48,8 +48,8 @@ export function isHistoricalListing(post: LegacyPost) {
 }
 
 export function isIndexable(post: LegacyPost) {
-  if (isHistoricalListing(post) || post.wordCount < 180) return false;
-  if (/coronavirus|covid/.test(post.path)) return false;
+  if (isHistoricalListing(post) || isHealthTopic(post) || post.wordCount < 180) return false;
+  if (/coronavirus|covid|author\/|sauna-marketplace-homepage/.test(post.path)) return false;
   return true;
 }
 

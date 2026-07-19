@@ -15,7 +15,7 @@ export const AFFILIATE_PICKS = [
   },
   {
     name: "Sauna bucket and ladle",
-    note: "For modest additions of clean water to a compatible stone heater—only where the manual permits it.",
+    note: "For modest additions of clean water to a compatible stone heater. Use it only where the manual permits water.",
     href: amazonSearch("sauna bucket and ladle"),
   },
   {

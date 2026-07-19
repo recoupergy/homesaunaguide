@@ -4,14 +4,15 @@ export const TOPICS = {
   planning: {
     eyebrow: "Start here",
     title: "How to plan a home sauna in 2026",
-    description: "A durable sauna plan starts with use, room volume, ventilation, and the heater manual—not finishes or accessories.",
-    answer: "Decide how many people will bathe, where the moisture will go, and which heat experience you want. Then calculate the finished room volume, choose a listed heater for that volume, follow its exact clearances, and design supply, exhaust, drainage, and drying before framing.",
+    description: "Plan a real bathing experience first. Then solve bench geometry, room volume, air, water, and the exact heater system.",
+    answer: "Start with the session you want: traditional water-on-stones löyly, wood-fire ritual, or infrared heat. For a traditional sauna, put bathers in the hot zone, calculate finished room volume, account for glass and other heat loss using the heater maker’s method, and coordinate ventilation, drying, clearances, controls, and service access before choosing finishes.",
+    position: "We design around people and löyly, not around a kit photo. A high upper bench, purposeful ceiling, two useful seating levels, and a clear path for heat and steam are worth more than a long accessory list.",
     keywords: ["plan", "home", "design", "room", "indoor", "outdoor", "basement", "ventilation"],
     steps: [
-      ["Define the session", "Write down capacity, indoor or outdoor location, desired temperature, frequency, and whether you want to throw water for löyly."],
+      ["Define the session", "Write down capacity, indoor or outdoor location, desired heat character, frequency, and whether water-on-stones löyly is part of the experience."],
       ["Solve the building envelope", "Plan insulation, a continuous vapor-control layer, water-tolerant finishes, drainage where required, and a reliable drying path."],
       ["Size from finished volume", "Include glass and other uninsulated surfaces using the heater maker’s method. Select the heater only after the finished room volume is known."],
-      ["Coordinate the systems", "Place benches, heater, guard, door, controls, sensor, supply air, low exhaust, lighting, and service access as one coordinated plan."],
+      ["Design the hot zone", "Work down from the ceiling. Place the upper bench where bathers can sit in the heat, then coordinate the lower bench, heater, guard, door, controls, sensor, supply air, exhaust, and service access."],
       ["Verify before purchase", "Check the current manual, listing, local code, permit requirements, and the installer’s scope before ordering equipment."],
     ],
     faqs: [
@@ -24,14 +25,15 @@ export const TOPICS = {
   building: {
     eyebrow: "Build well",
     title: "Home sauna construction fundamentals",
-    description: "The practical sequence for a safe, dry, serviceable sauna shell and interior.",
-    answer: "A reliable sauna is a coordinated high-heat, high-moisture room. Build the structure, insulation, vapor-control layer, ventilation, drainage, wiring, and heater clearances from a single plan; preserve air gaps and service access; and use the heater manual and local code as the final authority.",
+    description: "Build a high-heat room that feels right, survives moisture, dries completely, and remains serviceable.",
+    answer: "A reliable sauna is a coordinated heat, air, water, and structure system. Freeze the bench and heater geometry first. Then build the insulation, continuous vapor-control layer, drainage or cleaning plan, ventilation, wiring, and required clearances from one drawing. Preserve drying gaps and service access, and let the exact heater manual and local code make the final call.",
+    position: "We favor thermally modified wood for exposed outdoor rooms and many modern interiors because stability matters through repeated heat, humidity, and weather cycles. Thermo-aspen is our clean default, thermo-alder brings warmer grain, and thermo-spruce is the practical value choice. None of them rescues a bad envelope.",
     keywords: ["build", "diy", "bench", "vapor", "insulation", "basement", "construction", "ceiling"],
     steps: [
       ["Freeze the layout", "Dimension the finished room, door swing, bench heights, heater guard, clearances, and circulation before rough-in."],
       ["Rough in safely", "Coordinate drainage, ventilation ducts, dedicated electrical work or chimney path, lighting, controls, and sensor location."],
       ["Complete the envelope", "Install insulation and the specified vapor-control system continuously, then maintain the required furring or drying space."],
-      ["Use sauna-suitable interiors", "Choose stable, low-splinter bench stock and fasteners that will not burn skin or corrode in the room."],
+      ["Choose wood for the job", "Use stable, low-splinter bench stock and concealed fasteners that will not burn skin or corrode. Outdoors, weigh dimensional stability and weather exposure before choosing wood on appearance alone."],
       ["Commission the room", "Verify clearances, sensor position, airflow, heater controls, guard, fasteners, door operation, and drying before first use."],
     ],
     faqs: [
@@ -44,15 +46,16 @@ export const TOPICS = {
   heaters: {
     eyebrow: "Choose the heart",
     title: "Sauna heater selection without the guesswork",
-    description: "Compare electric, wood, and infrared heat by experience, room volume, installation, controls, and service—not marketing claims.",
-    answer: "Choose a heater by the experience you want and the finished room it must safely heat. Compare listed room-volume range, stone capacity, clearances, controls, electrical or chimney requirements, replacement parts, and local service. The current model manual outranks every rule of thumb.",
+    description: "Choose a heater by heat character, real room load, clearances, controls, service, and how often you will actually use it.",
+    answer: "For most homes, start with a listed 240V electric stone heater because easy startup lowers the friction of every session. Choose wood when tending a fire is part of the ritual. Treat infrared as its own lower-air-temperature category. In every case, compare the maker’s adjusted room range, stone mass, clearances, controls, electrical or chimney work, replacement parts, and service access. The current model manual outranks every rule of thumb.",
+    position: "Our shortlist is about fit, not trophies. Harvia KIP is the simple workhorse. HUUM HIVE earns a look when room and stone mass matter. HUUM DROP solves tighter layouts. Saunum is compelling when floor-to-ceiling temperature balance is the main problem. Each choice has a tradeoff, and none should be selected before the room is measured.",
     keywords: ["heater", "stove", "electric", "wood", "infrared", "harvia", "huum", "saunacore"],
     steps: [
-      ["Traditional electric", "Convenient, controllable, and usually the simplest way to create a water-on-stones sauna indoors. Plan the dedicated circuit, control, and sensor exactly."],
-      ["Wood burning", "Atmospheric and independent of a large electric load, but it needs combustion air, chimney design, ember management, clearances, and more maintenance."],
-      ["Infrared", "Lower air temperature and fast startup, but a different experience from a stone heater. Verify electrical listing, emitter layout, and surface-temperature controls."],
-      ["Stone and geometry", "Stone mass and exposed surface affect heat-up, radiant intensity, and steam character. More is not automatically better for every use pattern."],
-      ["Serviceability", "Confirm current certification, parts availability, warranty terms, local technical support, and who will commission the installation."],
+      ["Choose the heat experience", "Traditional electric is the low-friction default. Wood adds fire, sound, fuel, and tending. Infrared starts quickly but does not create the same room heat or löyly."],
+      ["Calculate the real load", "Use finished volume and the maker’s adjustment for glass, masonry, logs, and other uninsulated surfaces. If the room lands at a boundary, investigate the next size instead of assuming the smaller model will be fine."],
+      ["Check the whole package", "Heater, stones, controller, contactor or power unit, sensor, door switch, guard, electrical feed, and ventilation must work as one listed installation."],
+      ["Match stone mass to your routine", "More exposed stone can produce softer, longer löyly but often asks for more warm-up time and careful packing. A smaller wall heater can be faster and simpler."],
+      ["Buy for serviceability", "Confirm current certification, replacement elements, control support, warranty path, weather protection, and who will commission the installation."],
     ],
     faqs: [
       ["How many kilowatts should my sauna heater be?", "Use the selected manufacturer’s sizing method for finished room volume and uninsulated surfaces. Generic ratios cannot account for every construction, climate, or model."],
@@ -64,8 +67,9 @@ export const TOPICS = {
   health: {
     eyebrow: "Use wisely",
     title: "Sauna health evidence and safer sessions",
-    description: "What current evidence supports, what remains uncertain, and how to make conservative sauna decisions.",
-    answer: "Sauna can be a relaxing wellness practice, and observational research links regular use with some cardiovascular benefits, but it does not replace exercise, medication, vaccines, or medical care. Start with short sessions, hydrate, avoid alcohol, leave if unwell or dizzy, and ask a clinician about pregnancy, low blood pressure, unstable heart disease, or other concerns.",
+    description: "Enjoy sauna without miracle claims: what evidence supports, what remains uncertain, and when to be conservative.",
+    answer: "Sauna can be a relaxing, repeatable wellness practice. Observational research links regular use with some cardiovascular outcomes, but that does not prove sauna caused the benefit and it does not replace exercise, medication, vaccines, or medical care. Start with shorter sessions, hydrate, avoid alcohol, leave if unwell or dizzy, and ask a clinician about pregnancy, blood-pressure problems, unstable heart disease, or medication concerns.",
+    position: "The strongest reason to own a sauna is that you enjoy using it. We will not turn an association into a prescription, call sweat a miracle detox, or use medical anxiety to sell a heater.",
     keywords: ["health", "benefit", "heart", "weight", "heat shock", "long", "session", "cold plunge"],
     steps: [
       ["Treat claims by evidence level", "Separate controlled findings from observational associations, mechanisms, personal anecdotes, and marketing language."],
@@ -84,8 +88,9 @@ export const TOPICS = {
   rituals: {
     eyebrow: "Enjoy the heat",
     title: "Better sauna sessions: löyly, rhythm, and recovery",
-    description: "A simple, flexible practice built around comfort, clean air, water, rest, and attention to your body.",
-    answer: "A good sauna session is not an endurance event. Enter hydrated, let the room and your breathing settle, add water to appropriate stones in small amounts, step out before discomfort, cool gradually, and repeat only if you feel well. Comfort and consistency matter more than a timer or temperature record.",
+    description: "A repeatable sauna practice built around clean air, löyly, comfort, cooling, conversation, and a room that dries.",
+    answer: "A good sauna session is not an endurance event. Enter hydrated, let the room and your breathing settle, add modest water to compatible hot stones, step out before discomfort, cool in a way that feels good, and repeat only if you feel well. A cold plunge is optional. Comfort, company, and consistency matter more than a timer or temperature record.",
+    position: "We favor simple sessions and real löyly over optimization theater. Water, a ladle, a bench towel, and time are enough. Buy accessories because they solve a problem, not because a social-media routine says the ritual is incomplete without them.",
     keywords: ["ritual", "löyly", "session", "cold", "plunge", "hat", "aromatherapy", "accessories"],
     steps: [
       ["Prepare", "Drink water, shower if appropriate, remove metal jewelry that may heat up, and bring a clean bench towel."],

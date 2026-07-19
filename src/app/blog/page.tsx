@@ -20,7 +20,7 @@ export default async function BlogPage({ searchParams }: Props) {
   return (
     <>
       <section className="page-hero archive-hero">
-        <div className="shell narrow-hero"><span className="kicker light">Original library, carefully preserved</span><h1>The sauna archive.</h1><p>Long-form field notes, practical guides, product history, and sauna culture—recovered from the original database and Archive.org.</p></div>
+        <div className="shell narrow-hero"><span className="kicker light">History below, current judgment above</span><h1>The sauna archive.</h1><p>Long-form field notes, practical guides, product history, and sauna culture recovered from the original database and Archive.org. Every article now opens with our current editorial position.</p></div>
       </section>
       <section className="section archive-section">
         <div className="shell">

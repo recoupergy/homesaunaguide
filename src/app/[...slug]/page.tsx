@@ -15,6 +15,7 @@ import {
   legacyPosts,
   readingTime,
 } from "@/lib/content";
+import { getLegacyEditorialContext } from "@/lib/editorial";
 import { SITE } from "@/lib/site";
 
 type PageProps = { params: Promise<{ slug: string[] }> };
@@ -43,8 +44,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description,
       url: post.path,
       publishedTime: post.date,
-      modifiedTime: post.modified,
-      images: [{ url: "/og.png", width: 1200, height: 630, alt: "Home Sauna Guide" }],
+      modifiedTime: SITE.updated,
+      images: [{ url: "/og-v2.png", width: 1200, height: 630, alt: "Home Sauna Guide: build the sauna you will actually use" }],
     },
   };
 }
@@ -57,6 +58,7 @@ export default async function LegacyContentPage({ params }: PageProps) {
   const related = getRelatedPosts(post);
   const health = isHealthTopic(post);
   const listing = isHistoricalListing(post);
+  const editorialContext = getLegacyEditorialContext(post);
   const hasAmazonLinks = /(?:www\.)?amazon\.com/i.test(post.contentHtml);
   const articleSchema = {
     "@context": "https://schema.org",
@@ -64,7 +66,7 @@ export default async function LegacyContentPage({ params }: PageProps) {
     headline: post.title,
     description: post.description,
     datePublished: post.date,
-    dateModified: post.modified,
+    dateModified: SITE.updated,
     mainEntityOfPage: `${SITE.url}${post.path}`,
     author: { "@type": "Organization", name: "Home Sauna Guide Editorial Team", url: `${SITE.url}/about` },
     publisher: { "@type": "Organization", name: SITE.name, url: SITE.url },
@@ -102,6 +104,7 @@ export default async function LegacyContentPage({ params }: PageProps) {
           <aside className="article-rail">
             <span>On this page</span>
             <a href="#quick-answer">Quick answer</a>
+            <a href="#current-position">Our current position</a>
             <a href="#original-article">Original article</a>
             <a href="#editorial-note">Editorial note</a>
             <Link href="/sources">Sources policy</Link>
@@ -114,6 +117,13 @@ export default async function LegacyContentPage({ params }: PageProps) {
                   : post.description || post.excerpt}
               </AnswerBox>
             </div>
+
+            <aside id="current-position" className="current-position" role="note">
+              <span>{editorialContext.label}</span>
+              <h2>{editorialContext.title}</h2>
+              <p>{editorialContext.body}</p>
+              <Link href={editorialContext.href}>{editorialContext.linkLabel} →</Link>
+            </aside>
 
             {health && (
               <aside className="safety-note" role="note">
@@ -138,8 +148,8 @@ export default async function LegacyContentPage({ params }: PageProps) {
 
             <aside id="editorial-note" className="archive-note">
               <span>Archive continuity</span>
-              <h2>This original page has been preserved—not silently rewritten.</h2>
-              <p>Product details, prices, links, medical claims, building guidance, and code references can age. Before acting, compare this archive with the current heater manual, product listing, local authority, and our <Link href="/sources">primary-source library</Link>.</p>
+              <h2>This page is historical. Our current position appears above it.</h2>
+              <p>The original argument and URL are preserved, with broken commercial references and obsolete brand language cleaned up. Product details, prices, links, medical claims, building guidance, and code references can age. Before acting, compare this archive with the current heater manual, product listing, local authority, and our <Link href="/sources">primary-source library</Link>.</p>
               {post.sourceArchiveUrl && <a href={post.sourceArchiveUrl} rel="nofollow noopener">View the recovered Archive.org capture ↗</a>}
             </aside>
           </div>

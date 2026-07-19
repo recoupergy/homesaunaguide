@@ -9,7 +9,7 @@ export function SiteFooter() {
             <span className="brand-mark" aria-hidden="true"><span>H</span></span>
             <span className="brand-type">Home Sauna <em>Guide</em></span>
           </Link>
-          <p>Independent sauna planning, building, heater, and bathing guidance—with the original archive preserved.</p>
+          <p>Opinionated sauna planning, building, heater, and bathing guidance, with the original archive and current tradeoffs in view.</p>
         </div>
         <div>
           <h2>Explore</h2>
@@ -17,6 +17,7 @@ export function SiteFooter() {
           <Link href="/guides/building">Build well</Link>
           <Link href="/guides/heaters">Choose a heater</Link>
           <Link href="/guides/health">Health evidence</Link>
+          <Link href="/point-of-view">Our point of view</Link>
         </div>
         <div>
           <h2>Trust</h2>

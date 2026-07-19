@@ -11,6 +11,8 @@ for (const post of data.posts) {
   if (!post.title?.trim()) errors.push(`Missing title: ${post.path}`);
   if (!post.contentHtml?.trim() && post.wordCount > 0) errors.push(`Missing content: ${post.path}`);
   if (/<script|javascript:|\son\w+=|<iframe|<form/i.test(post.contentHtml)) errors.push(`Unsafe HTML: ${post.path}`);
+  const visibleFields = `${post.title} ${post.originalTitle} ${post.description} ${post.excerpt} ${post.contentHtml}`;
+  if (/sauna\s*marketplace/i.test(visibleFields)) errors.push(`Prohibited legacy brand reference: ${post.path}`);
 }
 
 for (const redirect of data.redirects) {

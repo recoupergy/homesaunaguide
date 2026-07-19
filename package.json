@@ -9,6 +9,8 @@
     "lint": "eslint",
     "check:affiliates": "node scripts/check-affiliates.mjs",
     "check:legacy": "node scripts/check-legacy.mjs",
+    "build:social-card": "node scripts/build-social-card.mjs",
+    "sanitize:legacy": "node scripts/sanitize-legacy-brand.mjs",
     "extract:legacy": "node scripts/extract-legacy.mjs",
     "retag:amazon": "node scripts/retag-amazon.mjs"
   },
