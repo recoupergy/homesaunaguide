@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AnswerBox } from "@/components/answer-box";
+import { AffiliatePicks } from "@/components/affiliate-picks";
 import { ArticleCard } from "@/components/article-card";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { JsonLd } from "@/components/json-ld";
@@ -81,6 +82,7 @@ export default async function TopicPage({ params }: Props) {
               <h2>Common questions.</h2>
               {item.faqs.map(([question, answer]) => <details key={question}><summary>{question}</summary><p>{answer}</p></details>)}
             </section>
+            {key === "rituals" && <AffiliatePicks />}
             <section className="topic-sources">
               <span className="kicker">Primary-source trail</span>
               <h2>Check the current authority.</h2>

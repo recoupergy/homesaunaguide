@@ -13,7 +13,8 @@ export default function AffiliateDisclosurePage() {
       <header className="page-hero"><div className="shell narrow-hero"><Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Affiliate disclosure" }]} /><span className="kicker light">Commercial transparency</span><h1>Affiliate disclosure.</h1><p>How the site may be funded, and the line money does not cross.</p></div></header>
       <section className="section utility-section"><div className="shell utility-layout"><article className="prose utility-prose">
         <h2>The plain-language disclosure</h2>
-        <p>Home Sauna Guide may use affiliate links. If you buy through one, the site may earn a commission at no additional cost to you. A commercial relationship does not guarantee coverage, placement, or a favorable conclusion.</p>
+        <p><strong>As an Amazon Associate I earn from qualifying purchases.</strong> Home Sauna Guide uses the Amazon associate tag <code>homesaunag-20</code>. If you buy through an eligible Amazon link, the site may earn a commission at no additional cost to you.</p>
+        <p>A commercial relationship does not guarantee coverage, placement, or a favorable conclusion. Affiliate links are marked as sponsored in the page markup.</p>
         <h2>Editorial independence</h2>
         <p>Recommendations begin with reader fit, safety, documentation, certification, serviceability, and total ownership considerations. Manufacturers and sellers do not receive the right to approve independent editorial copy. Sponsored material, if published, will be labeled prominently.</p>
         <h2>The recovered archive</h2>

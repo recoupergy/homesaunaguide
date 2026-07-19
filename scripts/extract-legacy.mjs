@@ -4,6 +4,7 @@ import { createReadStream, readFileSync, writeFileSync } from "node:fs";
 import { createGunzip } from "node:zlib";
 import { createInterface } from "node:readline";
 import { basename } from "node:path";
+import { isAmazonUrl, retagAmazonUrl } from "./amazon-links.mjs";
 
 const databasePath = process.argv[2];
 const archiveCdxPath = process.argv[3];
@@ -251,6 +252,7 @@ if (archiveCdxPath) {
 function safeHref(value) {
   const href = String(value ?? "").trim();
   if (!href || /^(?:javascript|data):/i.test(href)) return "#";
+  if (isAmazonUrl(href)) return retagAmazonUrl(href);
   return href.replace(/^http:\/\/homesaunaguide\.com/i, "https://homesaunaguide.com");
 }
 
@@ -266,12 +268,15 @@ function sanitizeHtml(input) {
     .replace(/<a\b([^>]*)href=("|')([^"']*)(\2)([^>]*)>/gi, (_, before, quote, href) => {
       const cleaned = safeHref(href);
       const external = /^https?:\/\//i.test(cleaned) && !/^https?:\/\/(?:www\.)?homesaunaguide\.com/i.test(cleaned);
-      return `<a href="${cleaned}"${external ? ' rel="nofollow noopener"' : ""}>`;
+      const amazon = isAmazonUrl(cleaned);
+      const attributeHref = cleaned.replaceAll("&", "&amp;").replaceAll('"', "&quot;");
+      return `<a href="${attributeHref}"${external ? ` rel="${amazon ? "sponsored " : ""}nofollow noopener"` : ""}${amazon ? ' target="_blank"' : ""}>`;
     })
     .replace(/<img\b[^>]*>/gi, (tag) => {
       const source = tag.match(/(?:src|data-src)=(?:"|')([^"']+)/i)?.[1] ?? "";
       const alt = htmlEntityDecode(tag.match(/alt=(?:"|')([^"']*)/i)?.[1] ?? "").replace(/"/g, "&quot;");
       if (!source) return "";
+      if (/amazon-adsystem\.com\/e\/ir\?/i.test(source)) return "";
       const normalized = source.replace(/^https?:\/\/(?:www\.)?homesaunaguide\.com/i, "");
       const archived = mediaCdx.get(normalized);
       if (archived) return `<img src="${archived}" alt="${alt}" loading="lazy" />`;

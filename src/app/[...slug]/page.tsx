@@ -57,6 +57,7 @@ export default async function LegacyContentPage({ params }: PageProps) {
   const related = getRelatedPosts(post);
   const health = isHealthTopic(post);
   const listing = isHistoricalListing(post);
+  const hasAmazonLinks = /(?:www\.)?amazon\.com/i.test(post.contentHtml);
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -119,6 +120,13 @@ export default async function LegacyContentPage({ params }: PageProps) {
                 <strong>Health-content note</strong>
                 <p>This archived article may predate current evidence. Sauna is not medical treatment. Do not use a sauna when ill; stop for dizziness or discomfort; and ask a qualified clinician about pregnancy, cardiovascular conditions, low blood pressure, or medication concerns.</p>
                 <Link href="/guides/health">Read the current evidence and safety guide →</Link>
+              </aside>
+            )}
+
+            {hasAmazonLinks && (
+              <aside className="affiliate-article-note" role="note">
+                <strong>Affiliate disclosure</strong>
+                <span>As an Amazon Associate I earn from qualifying purchases. Amazon links on this archived page use our current associate tag; availability and specifications can change. <Link href="/affiliate-disclosure">Full disclosure →</Link></span>
               </aside>
             )}
 

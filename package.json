@@ -7,8 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "check:affiliates": "node scripts/check-affiliates.mjs",
     "check:legacy": "node scripts/check-legacy.mjs",
-    "extract:legacy": "node scripts/extract-legacy.mjs"
+    "extract:legacy": "node scripts/extract-legacy.mjs",
+    "retag:amazon": "node scripts/retag-amazon.mjs"
   },
   "dependencies": {
     "next": "16.2.10",
