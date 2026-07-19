@@ -7,7 +7,7 @@ import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Our Sauna Point of View",
-  description: "The clear positions behind Home Sauna Guide recommendations on löyly, room design, heaters, wood, cold exposure, and product fit.",
+  description: "The bather-first standard behind Home Sauna Guide recommendations on löyly, bench geometry, ventilation, assemblies, heaters, materials, safety, and health claims.",
   alternates: { canonical: "/point-of-view" },
 };
 
@@ -44,7 +44,7 @@ export default function PointOfViewPage() {
           <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Our point of view" }]} />
           <span className="kicker light">Clear recommendations need a position</span>
           <h1>What we believe makes a better sauna.</h1>
-          <p>We are not neutral about every material, heater, room shape, or wellness claim. These are the judgments behind our guides, including the tradeoffs that keep them honest.</p>
+          <p>We are not neutral about the heat bathers feel, the air they breathe, the path of löyly, or whether the room can exit, clean, and dry safely. These are the judgments behind our guides—and the tradeoffs that keep them useful in real homes.</p>
         </div>
       </header>
 
@@ -70,7 +70,7 @@ export default function PointOfViewPage() {
               <span className="kicker">A heater shortlist, not a leaderboard</span>
               <h2>Four good answers to four different rooms.</h2>
             </div>
-            <p className="lead">We lean toward proven traditional electric heat for most homes, then narrow by room load, layout, stone character, controls, and the problem the heater needs to solve.</p>
+            <p className="lead">We lean toward proven traditional electric heat for most homes, then narrow by adjusted room load, stone capacity and airflow, radiant comfort, layout, controls, service, and the problem the heater must solve.</p>
           </div>
           <div className="shortlist-table">
             {HEATER_SHORTLIST.map((heater, index) => (
@@ -91,7 +91,7 @@ export default function PointOfViewPage() {
           <div>
             <span className="kicker light">Where our wood bias lands</span>
             <h2>Stable wood makes the rest of the design easier.</h2>
-            <p>We prefer thermally modified wood when repeated heat, humidity, and outdoor weather make movement and durability central to the project. Color is a design choice. Stability is a performance choice.</p>
+            <p>We prefer thermally modified wood when repeated heat, humidity, and outdoor weather make movement and durability central to the project. Cedar remains a valid choice, while aspen, alder, and spruce can bring lower aroma or a different feel. Species is a design choice. Stability, touch, grade, and detailing are performance choices.</p>
             <a className="text-link light" href="https://thermory.com/wp-content/uploads/2022/08/Thermory_Sauna_materials_Product_catalogue_0322-A4_ENG_web.pdf" rel="noopener">Read an official sauna-material catalog ↗</a>
           </div>
           <div className="material-cards">
@@ -103,8 +103,8 @@ export default function PointOfViewPage() {
       <section className="section viewpoint-close">
         <div className="shell viewpoint-close-inner">
           <span className="kicker">The standard underneath every recommendation</span>
-          <h2>Specifics beat superlatives.</h2>
-          <p>We would rather explain why a product fits, where it compromises, and what must be verified than declare one universal winner. If a current manual or primary source disagrees with a general rule here, the current source wins.</p>
+          <h2>Best practice, then graceful compromise.</h2>
+          <p>We explain what works best, why it works, where a real room may compromise, and what must be verified. A basement, budget, climate, code, or accessibility need can change the answer without lowering the standard of care. If a current manual or primary source disagrees with a general rule here, the current source wins.</p>
           <div><Link className="button pine" href="/guides/planning">Start with the planning guide →</Link><Link className="text-link" href="/editorial-policy">Read our editorial policy</Link></div>
         </div>
       </section>

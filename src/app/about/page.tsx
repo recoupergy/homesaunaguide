@@ -17,7 +17,7 @@ export default function AboutPage() {
           <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "About" }]} />
           <span className="kicker light">Knowledge with a point of view</span>
           <h1>Practical sauna judgment for better heat at home.</h1>
-          <p>Home Sauna Guide helps people make better decisions about rooms, heaters, construction, and bathing. We state what we prefer, explain the tradeoffs, and point to the source that should have the final word.</p>
+          <p>Home Sauna Guide helps people design for better heat at bather level: useful benches, breathable air, controllable löyly, durable construction, safe exits, and a room that dries. We state what we prefer, explain the tradeoffs, and point to the source that should have the final word.</p>
         </div>
       </header>
       <section className="section utility-section">
@@ -26,7 +26,8 @@ export default function AboutPage() {
             <h2>Our purpose</h2>
             <p>A home sauna sits at the intersection of architecture, moisture management, electrical or chimney work, fire safety, product service, and daily ritual. That makes shallow advice unusually expensive. We publish clear decision frameworks, identify the source that should have the final word, and say when professional judgment is needed.</p>
             <h2>What we stand for</h2>
-            <p>Traditional water-on-stones sauna is our reference point. We favor bench and ceiling geometry that puts people in the hot zone, electric heat for most home routines, wood fire when tending it is part of the joy, thermally modified wood where stability earns its cost, and product recommendations that explain their tradeoffs. Infrared is a separate experience. Cold plunging is optional. Health claims should lag evidence, not lead it.</p>
+            <p>Traditional water-on-stones sauna is our reference point. We work from the ceiling down, aim to keep the whole bather in the warm steam zone, treat fresh air and drying as separate but connected jobs, and prefer one durable moisture strategy through the enclosure. Electric heat fits most home routines; wood fire fits when tending it is part of the joy. Infrared is a separate experience. Cold plunging is optional. Health claims should lag evidence, not lead it.</p>
+            <p>We are pragmatic without being vague. The upper bench belongs near the ceiling, feet should sit near or above the stone line when practical, glazing should earn its heat penalty, doors should open outward without trapping anyone, and every heater should be judged as a complete system. When an existing room, budget, code, or accessibility need forces a compromise, we explain how to protect the experience rather than pretending the tradeoff disappeared.</p>
             <p>The editorial team works from a maintained body of product specifications, manuals, installation patterns, support lessons, owner questions, and sauna-culture knowledge. We turn that material into original guidance for this site. We do not invent personal testing stories or borrow another property’s identity.</p>
             <h2>A living sauna reference</h2>
             <p>Our library spans {recoverySummary.publishedContentCount} articles across planning, construction, heaters, products, health evidence, culture, and bathing practice. Long-running articles keep their publication dates and open with a current editorial position when the subject has changed.</p>

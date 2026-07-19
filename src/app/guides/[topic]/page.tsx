@@ -51,6 +51,13 @@ export default async function TopicPage({ params }: Props) {
       "@type": "FAQPage",
       mainEntity: item.faqs.map(([question, answer]) => ({ "@type": "Question", name: question, acceptedAnswer: { "@type": "Answer", text: answer } })),
     },
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      name: item.title,
+      description: item.description,
+      step: item.steps.map(([name, text], index) => ({ "@type": "HowToStep", position: index + 1, name, text, url: `${SITE.url}/guides/${key}#step-${index + 1}` })),
+    },
   ];
 
   return (
@@ -74,12 +81,19 @@ export default async function TopicPage({ params }: Props) {
               <p>{item.position}</p>
               <Link href="/point-of-view">See every position behind our recommendations →</Link>
             </aside>
+            <section className="topic-standard" aria-labelledby="topic-standard-heading">
+              <span className="kicker">The Home Sauna Guide standard</span>
+              <h2 id="topic-standard-heading">What good looks like.</h2>
+              <div>
+                {item.standard.map(([title, body]) => <article key={title}><h3>{title}</h3><p>{body}</p></article>)}
+              </div>
+            </section>
             <section className="topic-steps">
               <span className="kicker">The decision path</span>
               <h2>What matters, in order.</h2>
               <ol>
                 {item.steps.map(([title, body], index) => (
-                  <li key={title}><span>{String(index + 1).padStart(2, "0")}</span><div><h3>{title}</h3><p>{body}</p></div></li>
+                  <li id={`step-${index + 1}`} key={title}><span>{String(index + 1).padStart(2, "0")}</span><div><h3>{title}</h3><p>{body}</p></div></li>
                 ))}
               </ol>
             </section>
@@ -125,8 +139,8 @@ export default async function TopicPage({ params }: Props) {
           </div>
           <aside className="topic-rail">
             <span>Our non-negotiable</span>
-            <strong>Do not design from a generic diagram.</strong>
-            <p>Use the current manual for the exact heater and control you buy. Clearances, sensor position, ventilation, electrical requirements, and allowed room volume vary.</p>
+            <strong>Design from the bather outward.</strong>
+            <p>Use the current manual for the exact heater and control you buy. Bench and stone relationships, clearances, sensor position, ventilation type, electrical requirements, access, and allowed room volume all matter.</p>
             <Link href="/tools/sauna-room-calculator">Calculate room volume →</Link>
           </aside>
         </div>

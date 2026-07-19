@@ -18,11 +18,11 @@ export default function GuidesPage() {
         <div className="shell narrow-hero">
           <span className="kicker light">The Home Sauna Guide field manual</span>
           <h1>From first sketch<br />to first löyly.</h1>
-          <p>Follow the decisions in order. Each guide gives you the direct answer, our actual position, the tradeoffs, the primary-source trail, and in-depth articles for a deeper read.</p>
+          <p>Follow the decisions in order: bather experience, hot-zone geometry, fresh air, enclosure and drying, adjusted room load, then equipment. Each guide gives you the direct answer, our actual position, the tradeoffs, and the primary-source trail.</p>
           <Link className="button ember" href="/guides/planning">Start with planning →</Link>
         </div>
       </section>
-      <section className="guide-belief-strip"><div className="shell"><strong>Our reference experience:</strong><span>a traditional room with hot stones, water, clean air, useful benches, and enough time to enjoy it.</span><Link href="/point-of-view">Read our point of view →</Link></div></section>
+      <section className="guide-belief-strip"><div className="shell"><strong>Our reference experience:</strong><span>even bather-level heat, breathable air, hot stones, controllable water, useful high benches, safe exit, and complete drying.</span><Link href="/point-of-view">Read our point of view →</Link></div></section>
       <section className="section guide-map-section">
         <div className="shell">
           <div className="section-intro"><span className="kicker">Five decisions, in order</span><h2>Your sauna roadmap.</h2></div>

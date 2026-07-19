@@ -10,6 +10,7 @@
     "check:affiliates": "node scripts/check-affiliates.mjs",
     "check:legacy": "node scripts/check-legacy.mjs",
     "check:positioning": "node scripts/check-public-positioning.mjs",
+    "check:doctrine": "node scripts/check-editorial-doctrine.mjs",
     "build:social-card": "node scripts/build-social-card.mjs",
     "sanitize:legacy": "node scripts/sanitize-legacy-brand.mjs",
     "extract:legacy": "node scripts/extract-legacy.mjs",

@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       url: post.path,
       publishedTime: post.date,
       modifiedTime: SITE.updated,
-      images: [{ url: "/og-v2.png", width: 1200, height: 630, alt: "Home Sauna Guide: build the sauna you will actually use" }],
+      images: [{ url: "/og-v3.png", width: 1200, height: 630, alt: "Home Sauna Guide: better löyly starts with the room" }],
     },
   };
 }
@@ -122,6 +122,9 @@ export default async function LegacyContentPage({ params }: PageProps) {
               <span>{editorialContext.label}</span>
               <h2>{editorialContext.title}</h2>
               <p>{editorialContext.body}</p>
+              <ul className="current-position-criteria" aria-label="Current decision criteria">
+                {editorialContext.criteria.map((criterion) => <li key={criterion}>{criterion}</li>)}
+              </ul>
               <Link href={editorialContext.href}>{editorialContext.linkLabel} →</Link>
             </aside>
 

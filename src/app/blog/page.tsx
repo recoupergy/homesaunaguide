@@ -20,7 +20,7 @@ export default async function BlogPage({ searchParams }: Props) {
   return (
     <>
       <section className="page-hero archive-hero">
-        <div className="shell narrow-hero"><span className="kicker light">Go deeper than the buying checklist</span><h1>The sauna library.</h1><p>Long-form field notes, practical guides, product analysis, health evidence, and sauna culture. Each article leads with the judgment that matters now.</p></div>
+        <div className="shell narrow-hero"><span className="kicker light">Go deeper than the buying checklist</span><h1>The sauna library.</h1><p>Long-form guidance on hot-zone geometry, ventilation, enclosures, heaters, materials, safety, health evidence, and bathing culture. Each article leads with the judgment that matters now.</p></div>
       </section>
       <section className="section archive-section">
         <div className="shell">

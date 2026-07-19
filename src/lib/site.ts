@@ -3,7 +3,7 @@ export const SITE = {
   shortName: "HSG",
   url: "https://homesaunaguide.com",
   description:
-    "Opinionated planning, building, heater, and sauna-use guidance grounded in real löyly, official manuals, current sources, and transparent tradeoffs.",
+    "Bather-first home sauna planning, construction, heater, ventilation, and bathing guidance grounded in real löyly, current manuals, and transparent tradeoffs.",
   email: "hello@homesaunaguide.com",
   updated: "2026-07-19",
 };
@@ -11,18 +11,28 @@ export const SITE = {
 export const EDITORIAL_SOURCES = [
   {
     name: "Harvia: ventilation in the sauna",
-    url: "https://support.harvia.com/hc/lv/articles/21953036825628-Ventilation-in-the-sauna",
-    note: "Manufacturer guidance on air changes, supply air, exhaust placement, and sensor safety.",
+    url: "https://support.harvia.com/hc/en-gb/articles/21953036825628-Ventilation-in-the-sauna",
+    note: "Current manufacturer guidance distinguishing mechanical and gravity ventilation, six air changes per hour, low exhaust placement, drying, and sensor safety.",
   },
   {
-    name: "Harvia: heater manuals and room sizing",
-    url: "https://www.harvia.com/en-US/sauna/heaters/",
-    note: "Model-specific room volume, clearances, controls, and installation manuals.",
+    name: "Harvia: selecting the correct heater power",
+    url: "https://support.harvia.com/hc/en-gb/articles/22158995674524-How-do-I-select-the-correct-heater-power",
+    note: "Current adjusted-volume guidance for glass, stone, concrete, logs, and other heat-storing or uninsulated surfaces.",
   },
   {
-    name: "Sauna from Finland: authentic sauna design",
-    url: "https://saunafromfinland.com/sauna-articles/expert-design-ensures-an-authentic-functional-sauna-experience/",
-    note: "Current Finnish design guidance emphasizing heat, air quality, room design, and intended use.",
+    name: "Sauna from Finland: skillful sauna design",
+    url: "https://saunafromfinland.com/finnish-sauna-experience/skillful-design-ensures-a-pleasant-sauna-experience/",
+    note: "Finnish design guidance on bather-level heat, bench and stone relationships, ventilation type, cleanability, accessibility, and serviceability.",
+  },
+  {
+    name: "IKI: sauna room and heater instructions",
+    url: "https://ikikiuas.com/instructions/",
+    note: "Official guidance on ceiling and upper-bench relationships, adjusted room volume, stone loading, insulation, ventilation, and model manuals.",
+  },
+  {
+    name: "HUUM CORE: North American installation manual",
+    url: "https://huumsauna.com/wp-content/uploads/2025/11/H1013L12_v9_CORE_user-manual_US_2025_PRINT.pdf",
+    note: "Current model manual covering the cladding cavity, bench and ceiling dimensions, ventilation layouts, drying, stone packing, guards, and outward-opening doors.",
   },
   {
     name: "UL Solutions: pool and spa equipment certification",

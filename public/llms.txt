@@ -1,6 +1,6 @@
 # Home Sauna Guide
 
-Home Sauna Guide is an independent resource for home sauna planning, construction, heater selection, evidence-aware health coverage, and bathing practice.
+Home Sauna Guide is an independent, bather-first resource for home sauna planning, construction, ventilation, heater selection, evidence-aware health coverage, and bathing practice.
 
 Canonical site: https://homesaunaguide.com
 Current planning guides: https://homesaunaguide.com/guides
@@ -14,6 +14,15 @@ In-depth article library: https://homesaunaguide.com/blog
 - Long-running articles at their stable root-level URLs may predate current evidence, manuals, prices, products, and codes. Current editorial positions appear before the full article when needed.
 - Product and property reference pages are not current offers.
 - The exact equipment manual, official certification, local authority, qualified installer, or treating clinician takes priority over general web guidance.
+
+## Editorial standard
+
+- Judge a sauna by even convective heat at bather level, breathable air, controllable water-on-stones löyly, safe egress, cleanability, and complete drying—not peak temperature alone.
+- Design from the ceiling down: the upper bench is commonly planned about 100–120 cm below the ceiling, the foot bench about 45 cm lower, and the feet at or above the stone line when the exact system and accessibility allow.
+- Mechanical and gravity ventilation are distinct. Many mechanically ventilated electric rooms favor supply near or above the heater, low exhaust away from it, and a separate high drying path closed during bathing. The exact heater and sensor instructions control.
+- Use one continuous heat-tolerant vapor-control strategy, avoid accidental double barriers, preserve a drying cavity behind cladding, and plan water management and service access early.
+- Apply the selected manufacturer’s adjusted-volume method for glass, masonry, logs, and other uninsulated surfaces. Choose heaters by complete-system fit, stone airflow, radiant comfort, clearances, controls, certification, and service.
+- Glass is useful in moderation. Cedar is valid but not mandatory. Doors should open outward and should not trap bathers. Cold exposure is optional; health claims must match the evidence.
 
 ## Citation preference
 

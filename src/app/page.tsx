@@ -23,8 +23,8 @@ export default function Home() {
       <section className="hero">
         <Image
           className="hero-image"
-          src="/images/sauna-ritual.jpg"
-          alt="A bather in a wool sauna hat outside a traditional woodland sauna"
+          src="/images/sauna-hot-zone-v2.jpg"
+          alt="A bather seated high in a wood sauna adding water to a stone-rich heater"
           fill
           priority
           sizes="100vw"
@@ -33,7 +33,7 @@ export default function Home() {
         <div className="shell hero-content">
           <span className="kicker light">Traditional sauna knowledge · Est. 2019</span>
           <h1>Build the sauna<br />you will actually use.</h1>
-          <p>We favor real löyly, useful bench geometry, durable wood, proven heaters, clean air, and fewer gimmicks. Start with the bathing experience. Then build the room around it.</p>
+          <p>We favor even bather-level heat, breathable air, high useful benches, controllable löyly, durable assemblies, and fewer gimmicks. Start with the person on the bench. Then build the room outward.</p>
           <div className="hero-actions">
             <Link className="button ember" href="/guides/planning">Plan your sauna <span aria-hidden="true">→</span></Link>
             <Link className="text-link light" href="/guides">Explore every guide <span aria-hidden="true">↗</span></Link>
@@ -68,7 +68,7 @@ export default function Home() {
         <div className="shell">
           <div className="section-title-row">
             <div><span className="kicker">Recommendations with a backbone</span><h2>We have a point of view.</h2></div>
-            <Link className="text-link" href="/point-of-view">Read all six positions →</Link>
+            <Link className="text-link" href="/point-of-view">Read the full sauna standard →</Link>
           </div>
           <div className="home-position-grid">
             {EDITORIAL_POSITIONS.slice(0, 3).map((position) => (
@@ -95,9 +95,11 @@ export default function Home() {
             <p className="lead">Heat, air, water, people, and the building envelope all interact. The most expensive mistakes happen when one is designed in isolation.</p>
             <ol className="number-list">
               <li><span>01</span><div><strong>Löyly before lifestyle extras</strong><p>Heat, humidity, seating, and rhythm establish the brief.</p></div></li>
-              <li><span>02</span><div><strong>People before heater</strong><p>Bench and ceiling geometry place bathers in the hot zone.</p></div></li>
-              <li><span>03</span><div><strong>Real load before kilowatts</strong><p>Finished volume, glass, masonry, climate, and construction drive equipment choice.</p></div></li>
-              <li><span>04</span><div><strong>Manual before rule of thumb</strong><p>Exact clearances, sensors, controls, and ventilation win.</p></div></li>
+              <li><span>02</span><div><strong>Ceiling before floor</strong><p>Bench and stone relationships place the whole bather in the hot zone.</p></div></li>
+              <li><span>03</span><div><strong>Fresh air before finish</strong><p>Ventilation type, sensor placement, low exhaust, and drying belong in the first drawing.</p></div></li>
+              <li><span>04</span><div><strong>Real load before kilowatts</strong><p>Finished volume, glass, masonry, climate, and construction drive equipment choice.</p></div></li>
+              <li><span>05</span><div><strong>Safety before styling</strong><p>Outward egress, exact clearances, cleanability, and service access are design inputs.</p></div></li>
+              <li><span>06</span><div><strong>Manual before rule of thumb</strong><p>The current instructions for the exact system always win.</p></div></li>
             </ol>
             <Link className="button pine" href="/guides/planning">Read the planning guide <span aria-hidden="true">→</span></Link>
           </div>

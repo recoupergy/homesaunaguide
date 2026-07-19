@@ -18,10 +18,10 @@ const overlay = Buffer.from(`
     <text x="78" y="88" text-anchor="middle" fill="#17372f" font-family="Baskerville, Georgia, serif" font-size="34">H</text>
     <text x="132" y="83" fill="#fffdf8" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="5">HOME SAUNA GUIDE</text>
     <text x="50" y="245" fill="#fffdf8" font-family="Baskerville, Georgia, serif" font-size="78">
-      <tspan x="50" dy="0">Build the sauna</tspan>
-      <tspan x="50" dy="86">you will actually use.</tspan>
+      <tspan x="50" dy="0">Better löyly starts</tspan>
+      <tspan x="50" dy="86">with the room.</tspan>
     </text>
-    <text x="54" y="540" fill="#f5c5a9" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2.5">REAL LÖYLY  ·  USEFUL GEOMETRY  ·  HONEST TRADEOFFS</text>
+    <text x="54" y="540" fill="#f5c5a9" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2.2">BATHER-FIRST HEAT  ·  BREATHABLE AIR  ·  HONEST TRADEOFFS</text>
   </svg>
 `);
 

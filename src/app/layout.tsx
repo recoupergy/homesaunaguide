@@ -9,7 +9,7 @@ import { Analytics } from "@vercel/analytics/next";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: "Home Sauna Guide | Plan, Build & Enjoy Better Heat",
+    default: "Home Sauna Guide | Better Löyly by Design",
     template: "%s | Home Sauna Guide",
   },
   description: SITE.description,
@@ -23,16 +23,16 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: SITE.name,
-    title: "Home Sauna Guide | Build the sauna you will actually use",
+    title: "Home Sauna Guide | Better löyly starts with the room",
     description: SITE.description,
     url: SITE.url,
-    images: [{ url: "/og-v2.png", width: 1200, height: 630, alt: "Home Sauna Guide: build the sauna you will actually use" }],
+    images: [{ url: "/og-v3.png", width: 1200, height: 630, alt: "Home Sauna Guide: better löyly starts with the room" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Home Sauna Guide",
-    description: "Real löyly, useful geometry, durable materials, proven heaters, and honest tradeoffs.",
-    images: ["/og-v2.png"],
+    description: "Bather-first heat, breathable air, useful geometry, durable assemblies, and honest tradeoffs.",
+    images: ["/og-v3.png"],
   },
   robots: {
     index: true,

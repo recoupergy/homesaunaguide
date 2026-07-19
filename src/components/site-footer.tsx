@@ -1,15 +1,21 @@
 import Link from "next/link";
+import { SAUNA_STANDARD } from "@/lib/editorial";
 
 export function SiteFooter() {
   return (
     <footer className="site-footer">
+      <div className="shell footer-standard">
+        <div><span>Our sauna standard</span><strong>Design from the bather outward.</strong></div>
+        <dl>{SAUNA_STANDARD.map((item) => <div key={item.label}><dt>{item.label}</dt><dd>{item.value}</dd></div>)}</dl>
+        <Link href="/point-of-view">See the full standard →</Link>
+      </div>
       <div className="shell footer-grid">
         <div>
           <Link className="brand footer-brand" href="/">
             <span className="brand-mark" aria-hidden="true"><span>H</span></span>
             <span className="brand-type">Home Sauna <em>Guide</em></span>
           </Link>
-          <p>Opinionated sauna planning, building, heater, and bathing guidance with current sources and honest tradeoffs.</p>
+          <p>Bather-first sauna planning, building, heater, ventilation, and bathing guidance with current sources and honest tradeoffs.</p>
         </div>
         <div>
           <h2>Explore</h2>
