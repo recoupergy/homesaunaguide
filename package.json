@@ -13,6 +13,7 @@
     "retag:amazon": "node scripts/retag-amazon.mjs"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "next": "16.2.10",
     "postcss": "8.5.19",
     "react": "19.2.4",
