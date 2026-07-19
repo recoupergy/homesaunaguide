@@ -66,6 +66,12 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.homesaunaguide.com" }],
+        destination: "https://homesaunaguide.com/:path*",
+        permanent: true,
+      },
       { source: "/2019/05", destination: "/blog", permanent: true },
       { source: "/2019/05/", destination: "/blog", permanent: true },
       { source: "/author/bennyburger", destination: "/about", permanent: true },
