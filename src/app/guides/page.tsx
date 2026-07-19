@@ -18,7 +18,7 @@ export default function GuidesPage() {
         <div className="shell narrow-hero">
           <span className="kicker light">The Home Sauna Guide field manual</span>
           <h1>From first sketch<br />to first löyly.</h1>
-          <p>Follow the decisions in order. Each guide gives you the direct answer, our actual position, the tradeoffs, the primary-source trail, and original archive material for a deeper read.</p>
+          <p>Follow the decisions in order. Each guide gives you the direct answer, our actual position, the tradeoffs, the primary-source trail, and in-depth articles for a deeper read.</p>
           <Link className="button ember" href="/guides/planning">Start with planning →</Link>
         </div>
       </section>

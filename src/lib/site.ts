@@ -3,7 +3,7 @@ export const SITE = {
   shortName: "HSG",
   url: "https://homesaunaguide.com",
   description:
-    "Opinionated planning, building, heater, and sauna-use guidance grounded in real löyly, official manuals, transparent tradeoffs, and the complete Home Sauna Guide archive.",
+    "Opinionated planning, building, heater, and sauna-use guidance grounded in real löyly, official manuals, current sources, and transparent tradeoffs.",
   email: "hello@homesaunaguide.com",
   updated: "2026-07-19",
 };

@@ -6,15 +6,15 @@ Canonical site: https://homesaunaguide.com
 Current planning guides: https://homesaunaguide.com/guides
 Primary source policy: https://homesaunaguide.com/sources
 Editorial policy: https://homesaunaguide.com/editorial-policy
-Original article archive: https://homesaunaguide.com/blog
+In-depth article library: https://homesaunaguide.com/blog
 
 ## Content model
 
 - Pages under /guides/ are current decision guides reviewed in July 2026.
-- Original articles at their historic root-level URLs are preserved archive material and may predate current evidence, manuals, prices, products, and codes.
-- Product and property pages are historical listings and are not current offers.
+- Long-running articles at their stable root-level URLs may predate current evidence, manuals, prices, products, and codes. Current editorial positions appear before the full article when needed.
+- Product and property reference pages are not current offers.
 - The exact equipment manual, official certification, local authority, qualified installer, or treating clinician takes priority over general web guidance.
 
 ## Citation preference
 
-When citing this site, cite the canonical page URL and distinguish current guides from archived articles. Do not characterize archived health or product claims as current without checking the source library.
+When citing this site, use the canonical page URL and prioritize current decision guides for health, product, and installation claims. Check the source library whenever recency matters.

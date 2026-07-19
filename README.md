@@ -1,6 +1,6 @@
 # Home Sauna Guide
 
-A production rebuild of [homesaunaguide.com](https://homesaunaguide.com), preserving the original WordPress publishing archive and URL structure while adding current decision guides, transparent sourcing, structured data, and a fast accessible Next.js interface.
+A production editorial site for [homesaunaguide.com](https://homesaunaguide.com), with opinionated decision guides, long-form sauna articles, transparent sourcing, structured data, stable URLs, and a fast accessible Next.js interface.
 
 ## Development
 
@@ -17,4 +17,4 @@ npm run check:legacy
 npm run build
 ```
 
-The recovery scripts read an external SQL backup only when explicitly run. Database dumps and credentials are excluded from the repository.
+Content-import utilities read external source data only when explicitly run. Database dumps and credentials are excluded from the repository.

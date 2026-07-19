@@ -39,7 +39,7 @@ export default function Home() {
             <Link className="text-link light" href="/guides">Explore every guide <span aria-hidden="true">↗</span></Link>
           </div>
           <dl className="hero-proof">
-            <div><dt>{recoverySummary.publishedContentCount}</dt><dd>original pages preserved</dd></div>
+            <div><dt>{recoverySummary.publishedContentCount}</dt><dd>in-depth sauna articles</dd></div>
             <div><dt>5</dt><dd>practical decision guides</dd></div>
             <div><dt>0</dt><dd>miracle claims required</dd></div>
           </dl>
@@ -87,7 +87,7 @@ export default function Home() {
         <div className="shell field-note-grid">
           <div className="field-image-wrap">
             <Image src="/images/sauna-wood.jpg" alt="Fresh green towels inside a wood-lined sauna" fill sizes="(max-width: 800px) 100vw, 50vw" />
-            <span className="image-caption">From the original Home Sauna Guide photo archive</span>
+            <span className="image-caption">Home Sauna Guide field notes</span>
           </div>
           <div className="field-copy">
             <span className="kicker">The 2026 planning brief</span>
@@ -107,8 +107,8 @@ export default function Home() {
       <section className="popular-section section">
         <div className="shell">
           <div className="section-title-row">
-            <div><span className="kicker">Deep from the archive</span><h2>Guides readers return to.</h2></div>
-            <Link className="text-link" href="/blog">Browse the full archive <span aria-hidden="true">→</span></Link>
+            <div><span className="kicker">From the sauna library</span><h2>Guides readers return to.</h2></div>
+            <Link className="text-link" href="/blog">Browse all articles <span aria-hidden="true">→</span></Link>
           </div>
           <div className="article-grid">
             {featured.map((post) => <ArticleCard key={post.path} post={post} />)}

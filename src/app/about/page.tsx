@@ -5,7 +5,7 @@ import { recoverySummary } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "Meet the Home Sauna Guide editorial mission, our product and design perspective, and the responsibly recovered original archive.",
+  description: "Meet the Home Sauna Guide editorial mission and our point of view on better sauna design, products, evidence, and daily use.",
   alternates: { canonical: "/about" },
 };
 
@@ -16,8 +16,8 @@ export default function AboutPage() {
         <div className="shell narrow-hero">
           <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "About" }]} />
           <span className="kicker light">Knowledge with a point of view</span>
-          <h1>Practical sauna judgment, with its history intact.</h1>
-          <p>Home Sauna Guide helps people make better decisions about rooms, heaters, construction, and bathing. We preserve the useful history, correct the framing around it, and state what we would choose today.</p>
+          <h1>Practical sauna judgment for better heat at home.</h1>
+          <p>Home Sauna Guide helps people make better decisions about rooms, heaters, construction, and bathing. We state what we prefer, explain the tradeoffs, and point to the source that should have the final word.</p>
         </div>
       </header>
       <section className="section utility-section">
@@ -28,18 +28,18 @@ export default function AboutPage() {
             <h2>What we stand for</h2>
             <p>Traditional water-on-stones sauna is our reference point. We favor bench and ceiling geometry that puts people in the hot zone, electric heat for most home routines, wood fire when tending it is part of the joy, thermally modified wood where stability earns its cost, and product recommendations that explain their tradeoffs. Infrared is a separate experience. Cold plunging is optional. Health claims should lag evidence, not lead it.</p>
             <p>The editorial team works from a maintained body of product specifications, manuals, installation patterns, support lessons, owner questions, and sauna-culture knowledge. We turn that material into original guidance for this site. We do not invent personal testing stories or borrow another property’s identity.</p>
-            <h2>A responsible rebuild</h2>
-            <p>The original WordPress database and media archive were recovered in July 2026. We preserved {recoverySummary.publishedContentCount} published routes and restored historical redirects. Archive pages retain their historical argument and publication context; they are labeled so readers can distinguish recovered material from current guidance.</p>
-            <p>We do not quietly rewrite old arguments to make them appear current. Product availability, prices, medical claims, code references, and external links can age. Every archived route now carries a current editorial position above the recovered body. Broken commercial references and obsolete brand language are cleaned up without disguising the age of the underlying article.</p>
+            <h2>A living sauna reference</h2>
+            <p>Our library spans {recoverySummary.publishedContentCount} articles across planning, construction, heaters, products, health evidence, culture, and bathing practice. Long-running articles keep their publication dates and open with a current editorial position when the subject has changed.</p>
+            <p>Product availability, prices, medical evidence, code references, and external links can age. We keep the useful depth, make current judgment easy to find, and exclude obsolete or potentially misleading material from search when a newer guide should lead.</p>
             <h2>How to use this site</h2>
-            <p>Start with <Link href="/point-of-view">our point of view</Link> and the <Link href="/guides/planning">2026 planning guide</Link>, then move to the building, heater, health, and bathing guides. Use the archive for depth and history. Before a purchase or build, check the exact equipment manual, current certification, local code, and qualified installer.</p>
+            <p>Start with <Link href="/point-of-view">our point of view</Link> and the <Link href="/guides/planning">2026 planning guide</Link>, then move to the building, heater, health, and bathing guides. Use the article library for depth. Before a purchase or build, check the exact equipment manual, current certification, local code, and qualified installer.</p>
           </article>
           <aside className="utility-card">
             <span className="kicker">At a glance</span>
             <dl>
-              <div><dt>{recoverySummary.publishedContentCount}</dt><dd>original pages preserved</dd></div>
-              <div><dt>{recoverySummary.redirectCount}</dt><dd>legacy redirects restored</dd></div>
-              <div><dt>2026</dt><dd>current guides reviewed</dd></div>
+              <div><dt>{recoverySummary.publishedContentCount}</dt><dd>in-depth articles</dd></div>
+              <div><dt>5</dt><dd>current decision guides</dd></div>
+              <div><dt>2026</dt><dd>sources reviewed</dd></div>
             </dl>
             <Link className="button pine" href="/editorial-policy">Read our editorial policy →</Link>
           </aside>

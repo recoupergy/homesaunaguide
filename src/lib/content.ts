@@ -78,7 +78,7 @@ export function formatDate(value: string) {
     ? `${value.slice(0, 4)}-${value.slice(4, 6)}-${value.slice(6, 8)}`
     : value;
   const date = new Date(`${normalized.replace(" ", "T")}Z`);
-  if (Number.isNaN(date.valueOf())) return "Original archive";
+  if (Number.isNaN(date.valueOf())) return "Date unavailable";
   return new Intl.DateTimeFormat("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" }).format(date);
 }
 

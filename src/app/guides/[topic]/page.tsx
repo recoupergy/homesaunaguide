@@ -131,7 +131,7 @@ export default async function TopicPage({ params }: Props) {
           </aside>
         </div>
       </article>
-      {articles.length > 0 && <section className="section popular-section"><div className="shell"><div className="section-title-row"><div><span className="kicker">From the original library</span><h2>Read deeper.</h2></div><Link className="text-link" href="/blog">Full archive →</Link></div><div className="article-grid">{articles.map((post) => <ArticleCard key={post.path} post={post} />)}</div></div></section>}
+      {articles.length > 0 && <section className="section popular-section"><div className="shell"><div className="section-title-row"><div><span className="kicker">From the sauna library</span><h2>Read deeper.</h2></div><Link className="text-link" href="/blog">All articles →</Link></div><div className="article-grid">{articles.map((post) => <ArticleCard key={post.path} post={post} />)}</div></div></section>}
     </>
   );
 }
