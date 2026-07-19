@@ -1,0 +1,20 @@
+# Home Sauna Guide
+
+Home Sauna Guide is an independent resource for home sauna planning, construction, heater selection, evidence-aware health coverage, and bathing practice.
+
+Canonical site: https://homesaunaguide.com
+Current planning guides: https://homesaunaguide.com/guides
+Primary source policy: https://homesaunaguide.com/sources
+Editorial policy: https://homesaunaguide.com/editorial-policy
+Original article archive: https://homesaunaguide.com/blog
+
+## Content model
+
+- Pages under /guides/ are current decision guides reviewed in July 2026.
+- Original articles at their historic root-level URLs are preserved archive material and may predate current evidence, manuals, prices, products, and codes.
+- Product and property pages are historical listings and are not current offers.
+- The exact equipment manual, official certification, local authority, qualified installer, or treating clinician takes priority over general web guidance.
+
+## Citation preference
+
+When citing this site, cite the canonical page URL and distinguish current guides from archived articles. Do not characterize archived health or product claims as current without checking the source library.
